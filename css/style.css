@@ -1,0 +1,709 @@
+/* 
+Lizar Business HTML Template 
+
+*/
+/************ TABLE OF CONTENTS ***************
+
+1. Fonts
+2. Reset
+3. Global
+4. Main Header / Two / Three
+5. Main Slider / Two / Three
+6. About One
+7. Services One / Two / Three / Four
+8. Project One / Two / Three
+9. Testimonial One / Two / Three
+10. Partners One
+11. News One / Two
+12. CTA One
+13. Main Footer
+14. Clients One / Two / Three
+15. Counter One
+16. News Three
+17. InTouch One
+18. Page Title
+19. Banner One
+20. Work One
+21. Pricing One
+22. Team One
+23. Services Widgets
+24. Services Detail
+25. Our Projects
+26. Projects Detail
+27. Projects Widgets
+28. Our Blog
+29. Blog Widgets
+30. Comment Form
+31. Comment Box
+32. Contact Info
+33. Contact Form
+34. Map
+
+**********************************************/
+
+
+
+/*** 
+====================================================================
+	Css Files
+====================================================================
+***/
+@import url('01-global.css');
+@import url('module-css/header.css');
+@import url('module-css/footer.css');
+@import url('module-css/feature.css');
+@import url('module-css/solutions.css');
+@import url('module-css/pricing.css');
+@import url('module-css/brand.css');
+@import url('module-css/collaboration.css');
+@import url('module-css/testimonial.css');
+@import url('module-css/faq.css');
+@import url('module-css/free-trail.css');
+@import url('module-css/copywriting-tool.css');
+@import url('module-css/how-tool-work.css');
+@import url('module-css/counter.css');
+@import url('module-css/case.css');
+@import url('module-css/banner.css');
+@import url('module-css/gallery.css');
+@import url('module-css/image-generator-tools.css');
+@import url('module-css/art-and-image-tool.css');
+@import url('module-css/amazing-art-tool.css');
+@import url('module-css/create-something.css');
+@import url('module-css/page-title.css');
+@import url('module-css/about.css');
+@import url('module-css/video.css');
+@import url('module-css/team.css');
+@import url('module-css/ai-product.css');
+@import url('module-css/login.css');
+@import url('module-css/reset-password.css');
+@import url('module-css/contact.css');
+@import url('module-css/blog.css');
+@import url('module-css/career.css');
+@import url('module-css/404.css');
+
+
+
+
+@import url('02-bootstrap-select.min.css');
+@import url('03-owl.css');
+@import url('04-animate.css');
+@import url('05-rtl.css');
+@import url('06-custom-animate.css');
+@import url('07-dark-body.css');
+@import url('08-font-awesome.css');
+@import url('09-icomoon.css');
+@import url('10-jarallax.css');
+@import url('11-preloader.css');
+@import url('12-swiper.min.css');
+@import url('13-odometer-theme-default.css');
+@import url('14-jquery-ui.css');
+@import url('15-magnific-popup.css');
+@import url('../fonts/reey-font/stylesheet.css');
+
+
+
+/*** 
+====================================================================
+	
+====================================================================
+***/
+
+
+/* Sticy Header */
+.want-sticky-header .main-header.fixed-header {
+	position: relative !important;
+	display: none;
+}
+
+
+/* Box Layout */
+.box-layout .page-wrapper {
+	max-width: 1390px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 15px;
+	overflow: hidden;
+	background-color: var(--thm-body-bg);
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.10);
+}
+
+.box-layout:before {
+	position: fixed;
+	content: '';
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url(../images/partners/thm-pattern-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.box-layout .slider-one_social-icons {
+	display: none;
+}
+
+.box-layout .main-header-two__inner {
+	margin: 0 0px;
+}
+
+.container-circle {
+	position: absolute;
+}
+
+.circles-wrapper {
+	width: 200px;
+}
+
+.circle {
+	border: 1px solid rgba(60, 60, 119, .7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: relative;
+	transition: 1s;
+}
+
+.circles-wrapper:hover .circle-lg,
+.circles-wrapper:hover .circle-md,
+.circles-wrapper:hover .circle-sm {
+	border: 1px solid #23F9B2;
+}
+
+.circles-wrapper:hover .circle::before {
+	background: #23F9B2;
+}
+
+.circle::before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	background: rgb(68, 68, 140);
+	top: -6px;
+	border-radius: 50%;
+	/* box-shadow: 0 0 10px 6px rgba(237, 20, 61, .8); */
+	box-shadow: 0 0 1px 1px rgba(60, 60, 119, .4);
+}
+
+.circle-lg {
+	width: 150px;
+	height: 150px;
+	animation: rotateCircles 3.1s linear infinite;
+}
+
+.circle-md {
+	width: 110px;
+	height: 110px;
+	animation: rotateCircles 3s linear infinite;
+}
+
+.circle-md::before {
+	width: 8px;
+	height: 8px;
+}
+
+.circle-sm {
+	width: 70px;
+	height: 70px;
+	animation: rotateCircles 2.5s linear infinite;
+}
+
+.circle-sm::before {
+	width: 8px;
+	height: 8px;
+}
+
+
+@keyframes rotateCircles {
+	from {
+		transform: rotate(0);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.status-commponent {
+	border-radius: 12px;
+	border: 1px solid crimson;
+	/* border: 1px solid #ACDA49; */
+	background-color: #12122B;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+
+}
+
+span.status-text {
+	font-size: .75em;
+}
+
+/* From Uiverse.io by nikk7007 */
+.button {
+	--color: #23F9B2;
+	padding: 0.8em 1.7em;
+	background-color: #1E1E42;
+	border-radius: 3em;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: .5s;
+	font-weight: 500;
+	font-size: 12px;
+	border: 1px solid;
+	font-family: inherit;
+	text-transform: uppercase;
+	color: var(--color);
+	z-index: 1;
+}
+
+.button::before,
+.button::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 50%;
+	z-index: -1;
+	background-color: var(--color);
+	transition: 1s ease;
+}
+
+.button::before {
+	top: -1em;
+	left: -1em;
+}
+
+.button::after {
+	left: calc(100% + 1em);
+	top: calc(100% + 1em);
+}
+
+.button:hover::before,
+.button:hover::after {
+	height: 410px;
+	width: 410px;
+}
+
+.button:hover {
+	color: rgb(10, 25, 30);
+}
+
+.button:active {
+	filter: brightness(.8);
+}
+
+/* / */
+
+.button-wallet {
+	--color-wallet: #fd7e14;
+	padding: 0.8em 1.7em;
+	background-color: #1E1E42;
+	border-radius: 3em;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+	transition: .5s;
+	font-weight: 500;
+	font-size: 12px;
+	border: 1px solid;
+	font-family: inherit;
+	text-transform: uppercase;
+	color: var(--color-wallet);
+	z-index: 1;
+}
+
+.button-wallet::before,
+.button-wallet::after {
+	content: '';
+	display: block;
+	width: 50px;
+	height: 50px;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	border-radius: 50%;
+	z-index: -1;
+	background-color: var(--color-wallet);
+	transition: 1s ease;
+}
+
+.button-wallet::before {
+	top: -1em;
+	left: -1em;
+}
+
+.button-wallet::after {
+	left: calc(100% + 1em);
+	top: calc(100% + 1em);
+}
+
+.button-wallet:hover::before,
+.button-wallet:hover::after {
+	height: 410px;
+	width: 410px;
+}
+
+.button-wallet:hover {
+	color: rgb(10, 25, 30);
+}
+
+.button-wallet:active {
+	filter: brightness(.8);
+}
+
+/* / */
+
+.header-connect {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.header-section {
+	font-size: 1.1em;
+	font-weight: bold;
+	background-color: #1E1E42;
+	padding: .3em;
+}
+
+.header-section-out {
+	font-size: .9em;
+	font-weight: bold;
+	background-color: #1E1E42;
+	/* padding: .3em; */
+}
+
+.sub-header-mid {
+	font-size: .85rem;
+	font-weight: bold;
+	color: #ffc107;
+}
+
+.sub-header {
+	font-size: .85rem;
+	font-weight: bold;
+	color: #ACDA49;
+}
+
+span {
+	text-align: center;
+	font-size: .8em;
+}
+
+.node_images-1 {
+	margin-top: 100px;
+	margin-left: -150px;
+	width: 700px;
+	opacity: 70%;
+	-webkit-animation-name: float-bob-y;
+	animation-name: float-bob-y;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+.node_images-2 {
+	margin-top: 250px;
+	margin-left: 300px;
+	width: 700px;
+	opacity: 70%;
+	-webkit-animation-name: float-bob-y;
+	animation-name: float-bob-y;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-iteration-count: infinite;
+	animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+.feature-one {
+	align-items: center;
+}
+
+.feature-one__title {
+	margin-top: 100px;
+}
+
+.header-section-out-sub {
+	font-size: 0.85em;
+	/* padding: .3em; */
+}
+
+.space {
+	padding: 0px 50px;
+}
+
+.width {
+	width: 70svw;
+}
+
+.styles {
+	color: white;
+}
+
+.fix {
+	margin: 0;
+}
+
+@media (max-width: 768px) {
+	.width {
+		width: 100svw;
+	}
+
+	.space {
+		padding: 0px 10px;
+	}
+
+	.feature-one__title {
+		margin-top: 50px;
+	}
+
+	.node_images-1 {
+		margin-top: 390px;
+		margin-left: -0px;
+	}
+
+	.node_images-2 {
+		margin-top: 100px;
+		margin-left: -0px;
+	}
+
+	.feature-one__title {
+		font-size: 3px;
+	}
+
+	.feature-one {
+		align-items: start;
+	}
+
+	.header-section-out {
+		font-size: 0.65em;
+		font-weight: bold;
+		background-color: #1E1E42;
+		/* padding: .3em; */
+	}
+
+	.header-section-out-sub {
+		font-size: 0.7em;
+		/* padding: .3em; */
+	}
+
+	span {
+		font-size: 0.65em;
+	}
+
+	.sub-header {
+		font-size: 0.65em;
+	}
+
+	.sub-header-mid {
+		font-size: 0.65em;
+	}
+
+	.header-connect {
+		font-size: .9em;
+	}
+}
+
+@media (max-width: 480px) {
+	.feature-one__title {
+		margin-top: 50px;
+	}
+
+
+	.feature-one {
+		align-items: start;
+	}
+
+	.header-section-out {
+		font-size: 0.55em;
+		font-weight: bold;
+		background-color: #1E1E42;
+		/* padding: .3em; */
+	}
+
+	.header-section-out-sub {
+		font-size: 0.6em;
+		/* padding: .3em; */
+	}
+
+	span {
+		font-size: 0.55em;
+	}
+
+	.sub-header {
+		font-size: 0.55em;
+	}
+
+	.sub-header-mid {
+		font-size: 0.55em;
+	}
+
+	.header-connect {
+		font-size: .8em;
+	}
+}
+
+.loader {
+	--cell-size: 30px;
+	--cell-spacing: 2px;
+	--cells: 3;
+	--total-size: calc(var(--cells) * (var(--cell-size) + 2 * var(--cell-spacing)));
+	display: flex;
+	flex-wrap: wrap;
+	width: var(--total-size);
+	height: var(--total-size);
+}
+
+.cell {
+	flex: 0 0 var(--cell-size);
+	margin: var(--cell-spacing);
+	background-color: transparent;
+	box-sizing: border-box;
+	border-radius: 8px;
+	animation: 1.5s ripple ease infinite;
+	opacity: .3;
+}
+
+.cell.d-1 {
+	animation-delay: 100ms;
+}
+
+.cell.d-2 {
+	animation-delay: 200ms;
+}
+
+.cell.d-3 {
+	animation-delay: 300ms;
+}
+
+.cell.d-4 {
+	animation-delay: 400ms;
+}
+
+.cell:nth-child(1) {
+	--cell-color: #17FBA2;
+}
+
+.cell:nth-child(2) {
+	--cell-color: #3DF5D4;
+}
+
+.cell:nth-child(3) {
+	--cell-color: #60EFFF;
+}
+
+.cell:nth-child(4) {
+	--cell-color: #3DF5D4;
+}
+
+.cell:nth-child(5) {
+	--cell-color: #60EFFF;
+}
+
+.cell:nth-child(6) {
+	--cell-color: #3DF5D4;
+}
+
+.cell:nth-child(7) {
+	--cell-color: #60EFFF;
+}
+
+.cell:nth-child(8) {
+	--cell-color: #53F1F0;
+}
+
+.cell:nth-child(9) {
+	--cell-color: #60EFFF;
+}
+
+/*Animation*/
+@keyframes ripple {
+	0% {
+		background-color: transparent;
+		border: 1px transparent;
+	}
+
+	30% {
+		background: var(--cell-color);
+	}
+
+	60% {
+		background-color: transparent;
+		border: 1px transparent;
+	}
+
+	100% {
+		background-color: transparent;
+		border: 1px transparent;
+	}
+}
+
+/* // */
+
+.loader-earning {
+	display: block;
+	position: relative;
+	height: 1.8svw;
+	width: 60%;
+	background: #3C3C77;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.loader-earning:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 50%;
+	background: red;
+	animation: 6s ease-in-out prog;
+}
+
+@keyframes prog {
+	to {
+		width: 100%;
+	}
+}
+
+.loading svg polyline {
+	fill: none;
+	stroke-width: 3;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.loading svg polyline#back {
+	fill: none;
+	stroke: #ff4d5033;
+}
+
+.loading svg polyline#front {
+	fill: none;
+	stroke: #ff4d4f;
+	stroke-dasharray: 48, 144;
+	stroke-dashoffset: 192;
+	animation: dash_682 1.4s linear infinite;
+}
+
+@keyframes dash_682 {
+	72.5% {
+		opacity: 0;
+	}
+
+	to {
+		stroke-dashoffset: 0;
+	}
+}
